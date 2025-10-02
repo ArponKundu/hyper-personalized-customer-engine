@@ -57,6 +57,12 @@ Intelligent customer analytics system for e-commerce featuring:
 
 └── README.md         # Project overview
 
+\## Team
+
+\🧑🏻‍🏫 Dr. Munima Jahan - Supervisor
+
+\🧑🏻‍🎓 Arpon Kundu - Student
+
 
 \## Quick Start
 
