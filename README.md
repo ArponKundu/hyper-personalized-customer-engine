@@ -41,19 +41,6 @@ Intelligent customer analytics system for e-commerce featuring:
 \- Facebook Prophet for forecasting
 
 
-
-\## Quick Start
-
-```bash
-
-git clone https://github.com/your-username/hyper-personalized-customer-engine
-
-cd hyper-personalized-customer-engine
-
-pip install -r requirements.txt
-
-
-
 \## Project Structure
 
 ├── data/              # Datasets
@@ -69,4 +56,15 @@ pip install -r requirements.txt
 ├── requirements.txt   # Python dependencies
 
 └── README.md         # Project overview
+
+
+\## Quick Start
+
+```bash
+
+git clone https://github.com/your-username/hyper-personalized-customer-engine
+
+cd hyper-personalized-customer-engine
+
+pip install -r requirements.txt
 
