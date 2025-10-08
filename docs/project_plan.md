@@ -12,23 +12,23 @@ October 2025:
 
 • Week 1-2: Literature Review \& Research
 
-&nbsp;	• Comprehensive review of churn prediction papers
+ 	• Comprehensive review of churn prediction papers
 
-&nbsp;	• Analysis of recommendation system methodologies
+ 	• Analysis of recommendation system methodologies
 
-&nbsp;	• Study of customer segmentation techniques
+ 	• Study of customer segmentation techniques
 
-&nbsp;	• Research on real-time analytics systems
+ 	• Research on real-time analytics systems
 
 • Week 1-2: Methodology Documentation
 
-&nbsp;	• Project methodology finalization
+ 	• Project methodology finalization
 
-&nbsp;	• Technical approach documentation
+ 	• Technical approach documentation
 
-&nbsp;	• Success metrics definition
+ 	• Success metrics definition
 
-&nbsp;	• Evaluation framework design
+ 	• Evaluation framework design
 
 
 
@@ -38,43 +38,43 @@ October 2025:
 
 • Week 1-2: Project Setup \& Environment
 
-&nbsp;	• GitHub repository setup
+ 	• GitHub repository setup
 
-&nbsp;	• Development environment configuration
+ 	• Development environment configuration
 
-&nbsp;	• Tool selection and installation
+ 	• Tool selection and installation
 
-&nbsp;	• Literature review completion
+ 	• Literature review completion
 
 • Week 3-4: Data Acquisition \& Exploration
 
-&nbsp;	• REES46 dataset download and analysis
+ 	• REES46 dataset download and analysis
 
-&nbsp;	• Olist dataset integration
+ 	• Olist dataset integration
 
-&nbsp;	• Initial data quality assessment
+ 	• Initial data quality assessment
 
-&nbsp;	• Exploratory Data Analysis (EDA)
+ 	• Exploratory Data Analysis (EDA)
 
 • Week 3-4: Database Architecture
 
-&nbsp;	• PostgreSQL + TimescaleDB installation
+ 	• PostgreSQL + TimescaleDB installation
 
-&nbsp;	• Database schema design
+ 	• Database schema design
 
-&nbsp;	• Data modeling decisions
+ 	• Data modeling decisions
 
-&nbsp;	• Initial ETL pipeline setup
+ 	• Initial ETL pipeline setup
 
 • Week 3-4: Advanced Feature Engineering
 
-&nbsp;	• RFM metrics implementation
+ 	• RFM metrics implementation
 
-&nbsp;	• Temporal feature creation (7/30/60/90-day windows)
+ 	• Temporal feature creation (7/30/60/90-day windows)
 
-&nbsp;	• Behavioral velocity calculations
+ 	• Behavioral velocity calculations
 
-&nbsp;	• Churn labeling logic
+ 	• Churn labeling logic
 
 
 
@@ -82,23 +82,23 @@ November 2025:
 
 • Week 1-2: Data Pipeline Optimization
 
-&nbsp;	• Automated ETL workflows
+ 	• Automated ETL workflows
 
-&nbsp;	• Data validation frameworks
+ 	• Data validation frameworks
 
-&nbsp;	• Feature store implementation
+ 	• Feature store implementation
 
-&nbsp;	• Data quality monitoring
+ 	• Data quality monitoring
 
 • Week 1-2: Phase 1 Review \& Documentation
 
-&nbsp;	• Data pipeline documentation
+ 	• Data pipeline documentation
 
-&nbsp;	• Feature engineering report
+ 	• Feature engineering report
 
-&nbsp;	• Phase 1 deliverables validation
+ 	• Phase 1 deliverables validation
 
-&nbsp;	• Phase 2 planning
+ 	• Phase 2 planning
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -108,43 +108,43 @@ November 2025:
 
 • Week 1-2: Churn Prediction Foundation
 
-&nbsp;	• Baseline model implementation
+ 	• Baseline model implementation
 
-&nbsp;	• Feature selection algorithms
+ 	• Feature selection algorithms
 
-&nbsp;	• Model evaluation framework
+ 	• Model evaluation framework
 
-&nbsp;	• Cross-validation strategies
+ 	• Cross-validation strategies
 
 • Week 3-4: Advanced Churn Modeling
 
-&nbsp;	• XGBoost/LightGBM implementation
+ 	• XGBoost/LightGBM implementation
 
-&nbsp;	• Multi-time-horizon forecasting (30/60/90 days)
+ 	• Multi-time-horizon forecasting (30/60/90 days)
 
-&nbsp;	• Hyperparameter optimization
+ 	• Hyperparameter optimization
 
-&nbsp;	• Model interpretability setup
+ 	• Model interpretability setup
 
 • Week 3-4: Recommendation System
 
-&nbsp;	• LightFM collaborative filtering
+ 	• LightFM collaborative filtering
 
-&nbsp;	• Customer-product interaction matrix
+ 	• Customer-product interaction matrix
 
-&nbsp;	• Hybrid recommendation approach
+ 	• Hybrid recommendation approach
 
-&nbsp;	• Evaluation metrics implementation
+ 	• Evaluation metrics implementation
 
 • Week 3-4: Advanced Personalization
 
-&nbsp;	• Context-aware recommendations
+ 	• Context-aware recommendations
 
-&nbsp;	• Multi-objective optimization
+ 	• Multi-objective optimization
 
-&nbsp;	• Real-time scoring engine
+ 	• Real-time scoring engine
 
-&nbsp;	• A/B testing framework
+ 	• A/B testing framework
 
 
 
@@ -152,43 +152,43 @@ January 2025:
 
 • Week 1-2: Customer Segmentation
 
-&nbsp;	• K-means clustering implementation
+ 	• K-means clustering implementation
 
-&nbsp;	• Segment profiling and analysis
+ 	• Segment profiling and analysis
 
-&nbsp;	• Dynamic segmentation logic
+ 	• Dynamic segmentation logic
 
-&nbsp;	• Segment transition modeling
+ 	• Segment transition modeling
 
 • Week 1-2: Model Integration \& Validation
 
-&nbsp;	• Model pipeline integration
+ 	• Model pipeline integration
 
-&nbsp;	• Performance benchmarking
+ 	• Performance benchmarking
 
-&nbsp;	• Model validation reports
+ 	• Model validation reports
 
-&nbsp;	• Business metric alignment
+ 	• Business metric alignment
 
 • Week 1-2: Advanced Analytics
 
-&nbsp;	• Causal inference implementation
+ 	• Causal inference implementation
 
-&nbsp;	• Counterfactual analysis
+ 	• Counterfactual analysis
 
-&nbsp;	• SHAP explanations integration
+ 	• SHAP explanations integration
 
-&nbsp;	• Model monitoring setup
+ 	• Model monitoring setup
 
 • Week 1-2: Phase 2 Review \& Optimization
 
-&nbsp;	• Model performance review
+ 	• Model performance review
 
-&nbsp;	• Optimization iterations
+ 	• Optimization iterations
 
-&nbsp;	• Documentation updates
+ 	• Documentation updates
 
-&nbsp;	• Phase 3 preparation
+ 	• Phase 3 preparation
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -198,43 +198,43 @@ January 2025:
 
 • Week 3-4: Dashboard Foundation
 
-&nbsp;	• Streamlit application setup
+ 	• Streamlit application setup
 
-&nbsp;	• Basic visualization components
+ 	• Basic visualization components
 
-&nbsp;	• User interface design
+ 	• User interface design
 
-&nbsp;	• Navigation structure
+ 	• Navigation structure
 
 • Week 3-4: Customer Intelligence Views
 
-&nbsp;	• Customer 360° profile implementation
+ 	• Customer 360° profile implementation
 
-&nbsp;	• Real-time metrics display
+ 	• Real-time metrics display
 
-&nbsp;	• Interactive visualizations
+ 	• Interactive visualizations
 
-&nbsp;	• Data refresh mechanisms
+ 	• Data refresh mechanisms
 
 • Week 3-4: Advanced Analytics Dashboard
 
-&nbsp;	• Churn analytics implementation
+ 	• Churn analytics implementation
 
-&nbsp;	• Segmentation visualization
+ 	• Segmentation visualization
 
-&nbsp;	• Recommendation displays
+ 	• Recommendation displays
 
-&nbsp;	• Performance metrics dashboard
+ 	• Performance metrics dashboard
 
 • Week 3-4: API Development
 
-&nbsp;	• FastAPI backend setup
+ 	• FastAPI backend setup
 
-&nbsp;	• RESTful endpoint development
+ 	• RESTful endpoint development
 
-&nbsp;	• Authentication and security
+ 	• Authentication and security
 
-&nbsp;	• API documentation
+ 	• API documentation
 
 
 
@@ -242,43 +242,43 @@ February 2025:
 
 • Week 1-2: Decision Engine Implementation
 
-&nbsp;	• Business rules engine
+ 	• Business rules engine
 
-&nbsp;	• Intervention logic
+ 	• Intervention logic
 
-&nbsp;	• Automated action recommendations
+ 	• Automated action recommendations
 
-&nbsp;	• Personalization strategies
+ 	• Personalization strategies
 
 • Week 1-2: Real-time Features
 
-&nbsp;	• WebSocket implementation
+ 	• WebSocket implementation
 
-&nbsp;	• Live alert system
+ 	• Live alert system
 
-&nbsp;	• Real-time monitoring
+ 	• Real-time monitoring
 
-&nbsp;	• Notification system
+ 	• Notification system
 
 • Week 1-2: Campaign Simulation Studio
 
-&nbsp;	• "What-if" scenario builder
+ 	• "What-if" scenario builder
 
-&nbsp;	• ROI prediction engine
+ 	• ROI prediction engine
 
-&nbsp;	• Impact simulation models
+ 	• Impact simulation models
 
-&nbsp;	• Visualization of results
+ 	• Visualization of results
 
 • Week 3-4: Phase 3 Integration \& Testing
 
-&nbsp;	• End-to-end system testing
+ 	• End-to-end system testing
 
-&nbsp;	• Integration validation
+ 	• Integration validation
 
-&nbsp;	• User acceptance testing
+ 	• User acceptance testing
 
-&nbsp;	• Performance optimization
+ 	• Performance optimization
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -288,33 +288,33 @@ February 2025:
 
 • Week 3-4: Advanced Personalization
 
-&nbsp;	• Deep learning recommendations
+ 	• Deep learning recommendations
 
-&nbsp;	• Advanced NLP for customer interactions
+ 	• Advanced NLP for customer interactions
 
-&nbsp;	• Sentiment analysis integration
+ 	• Sentiment analysis integration
 
-&nbsp;	• Behavioral pattern recognition
+ 	• Behavioral pattern recognition
 
 • Week 3-4: Predictive Analytics Enhancement
 
-&nbsp;	• Advanced time-series forecasting
+ 	• Advanced time-series forecasting
 
-&nbsp;	• Anomaly detection systems
+ 	• Anomaly detection systems
 
-&nbsp;	• Customer lifetime value prediction
+ 	• Customer lifetime value prediction
 
-&nbsp;	• Next-best-action recommendations
+ 	• Next-best-action recommendations
 
 • Week 3-4: System Scalability
 
-&nbsp;	• Performance optimization
+ 	• Performance optimization
 
-&nbsp;	• Database query optimization
+ 	• Database query optimization
 
-&nbsp;	• Caching strategies
+ 	• Caching strategies
 
-&nbsp;	• Load testing and optimization
+ 	• Load testing and optimization
 
 
 
@@ -322,33 +322,33 @@ March 2025:
 
 • Week 1-2: Advanced Monitoring
 
-&nbsp;	• Model drift detection
+ 	• Model drift detection
 
-&nbsp;	• System health monitoring
+ 	• System health monitoring
 
-&nbsp;	• Automated alerting system
+ 	• Automated alerting system
 
-&nbsp;	• Performance analytics
+ 	• Performance analytics
 
 • Week 1-2: Security \& Compliance
 
-&nbsp;	• Data security implementation
+ 	• Data security implementation
 
-&nbsp;	• Privacy compliance checks
+ 	• Privacy compliance checks
 
-&nbsp;	• Access control systems
+ 	• Access control systems
 
-&nbsp;	• Audit logging
+ 	• Audit logging
 
 • Week 1-2: Phase 4 Review
 
-&nbsp;	• Advanced features validation
+ 	• Advanced features validation
 
-&nbsp;	• System performance review
+ 	• System performance review
 
-&nbsp;	• Optimization results analysis
+ 	• Optimization results analysis
 
-&nbsp;	• Final documentation updates
+ 	• Final documentation updates
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -358,45 +358,45 @@ March 2026:
 
 • Week 3-4: Comprehensive Testing
 
-&nbsp;	• Unit testing completion
+ 	• Unit testing completion
 
-&nbsp;	• Integration testing
+ 	• Integration testing
 
-&nbsp;	• System testing
+ 	• System testing
 
-&nbsp;	• User acceptance testing
+ 	• User acceptance testing
 
 • Week 3-4: Deployment Preparation
 
-&nbsp;	• Production environment setup
+ 	• Production environment setup
 
-&nbsp;	• Deployment pipeline configuration
+ 	• Deployment pipeline configuration
 
-&nbsp;	• Backup and recovery systems
+ 	• Backup and recovery systems
 
-&nbsp;	• Monitoring and logging setup
+ 	• Monitoring and logging setup
 
 March 2026:
 
 • Week 3-4: Final Deployment
 
-&nbsp;	• Production deployment
+ 	• Production deployment
 
-&nbsp;	• System go-live
+ 	• System go-live
 
-&nbsp;	• Initial production monitoring
+ 	• Initial production monitoring
 
-&nbsp;	• Performance validation
+ 	• Performance validation
 
 • Week 3-4: Project Finalization
 
-&nbsp;	• Final documentation completion
+ 	• Final documentation completion
 
-&nbsp;	• User training materials
+ 	• User training materials
 
-&nbsp;	• Project presentation preparation
+ 	• Project presentation preparation
 
-&nbsp;	• Knowledge transfer documentation
+ 	• Knowledge transfer documentation
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -413,8 +413,4 @@ Key Milestones \& Deliverables:
 4\. February 2026: Phase 4 Complete - Advanced Features Implemented
 
 5\. March 2026: Project Completion - Full Deployment
-
-
-
-
 
