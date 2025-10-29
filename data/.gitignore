@@ -1,0 +1,7 @@
+# Ignore all data folders
+data/
+datasets/
+raw_data/
+*.csv
+*.zip
+*.bak
