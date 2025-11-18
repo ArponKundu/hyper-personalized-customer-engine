@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="Detailed End-to-End Architecture" id="0">
+    <mxGraphModel dx="5369" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;Hyper-Personalized Customer Experience &amp;amp; Churn Prediction Engine&lt;/b&gt;&lt;br&gt;End-to-End System Architecture" style="whiteSpace=wrap;html=1;fontSize=20;align=center;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="640" y="10" width="1300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="olist" value="&lt;b&gt;Olist Dataset&lt;/b&gt;&lt;br/&gt;Orders, Items, Customers, Products, Sellers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="100" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rees" value="&lt;b&gt;REES46 Dataset&lt;/b&gt;&lt;br/&gt;Behavioral events (views, carts, purchases)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="282" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="synth" value="&lt;b&gt;Synthetic Feedback Generator&lt;/b&gt;&lt;br/&gt;Simulated intervention responses" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="492" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="stage" value="&lt;b&gt;Ingestion &amp; Preprocessing&lt;/b&gt;&lt;br/&gt;- Temporal alignment&lt;br/&gt;- Quality checks&lt;br/&gt;- Schema enforcement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="360" y="252" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;b&gt;PostgreSQL + TimescaleDB&lt;/b&gt;&lt;br/&gt;customer_features_daily&lt;br/&gt;segment_transitions&lt;br/&gt;intervention_logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="783" y="252" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="feat" value="&lt;b&gt;Temporal Feature Engineering&lt;/b&gt;&lt;br/&gt;Rolling RFM, velocity, CLV, sequence patterns,&lt;br/&gt;adaptive churn labeling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1217" y="252" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ml_seg" value="&lt;b&gt;Segmentation Model&lt;/b&gt;&lt;br/&gt;Dual-timeframe (RFM + Prophet forecast)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1848" y="150" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ml_churn" value="&lt;b&gt;Churn Prediction&lt;/b&gt;&lt;br/&gt;Segment-specific LightGBM/XGBoost&lt;br/&gt;30/60/90-day forecasts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1848" y="272" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ml_rec" value="&lt;b&gt;Recommendation Engine&lt;/b&gt;&lt;br/&gt;Multi-objective (revenue, retention, discovery, win-back)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1848" y="392" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" value="&lt;b&gt;CustomerDecisionEngine&lt;/b&gt;&lt;br/&gt;Rules, prioritization, intervention catalog,&lt;br/&gt;resource optimization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="2372" y="252" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="&lt;b&gt;API &amp; Visualization Layer&lt;/b&gt;&lt;br/&gt;/api/customer/actions&lt;br/&gt;/api/simulate/intervention&lt;br/&gt;Streamlit, Power BI Dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="2812" y="252" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" value="&lt;b&gt;Feedback Loop&lt;/b&gt;&lt;br/&gt;Customer responses → REES46 events&lt;br/&gt;Automated retraining &amp; optimization" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="2020" y="560" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="CSV → COPY" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="olist" target="stage" edge="1">
+          <mxGeometry x="-0.7576" y="22" relative="1" as="geometry">
+            <mxPoint x="180" y="182" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="JSON / Events" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry x="-0.52" y="22" relative="1" as="geometry">
+            <mxPoint x="162" y="332" as="sourcePoint" />
+            <mxPoint x="362" y="332" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="Synthetic data" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="synth" target="stage" edge="1">
+          <mxGeometry x="-0.7512" y="22" relative="1" as="geometry">
+            <mxPoint x="150" y="532" as="sourcePoint" />
+            <mxPoint x="350" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="330" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="Validated tables" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" source="stage" target="db" edge="1">
+          <mxGeometry x="-0.021" y="32" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="Feature queries" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" source="db" target="feat" edge="1">
+          <mxGeometry y="32" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="Features for segmentation" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="feat" target="ml_seg" edge="1">
+          <mxGeometry x="0.6199" y="20" relative="1" as="geometry">
+            <mxPoint x="1567" y="202" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="Features for churn models" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;entryX=0;entryY=0.587;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="feat" target="ml_churn" edge="1">
+          <mxGeometry x="0.4704" y="21" relative="1" as="geometry">
+            <mxPoint x="1740" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="Features for recommender" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" source="feat" target="ml_rec" edge="1">
+          <mxGeometry x="0.6009" y="22" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="Segment IDs" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" target="decision" edge="1">
+          <mxGeometry x="-0.6684" y="22" relative="1" as="geometry">
+            <mxPoint x="2128" y="202" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="Churn probabilities" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" target="decision" edge="1">
+          <mxGeometry x="-0.5118" y="22" relative="1" as="geometry">
+            <mxPoint x="2130" y="332" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="Recommended items" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" source="ml_rec" target="decision" edge="1">
+          <mxGeometry x="-0.6497" y="22" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="Recommended actions" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;" parent="1" source="decision" target="api" edge="1">
+          <mxGeometry x="-0.025" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2720" y="330" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="Channel responses" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="api" edge="1">
+          <mxGeometry x="0.012" y="-20" relative="1" as="geometry">
+            <mxPoint x="2330" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2962" y="510" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="Behavior events update" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="rees" edge="1">
+          <mxGeometry x="0.0008" y="-20" relative="1" as="geometry">
+            <mxPoint x="2020" y="610" as="sourcePoint" />
+            <mxPoint x="-190" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-190" y="720" />
+              <mxPoint x="250" y="450" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
