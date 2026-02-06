@@ -1,0 +1,24 @@
+artifact_path: file:D:/Thompson Rivers University/3rd Semester/Grad Project on Data
+  Science/Final Year Design Project/hyper-personalized-customer-engine/notebooks/mlruns/1/models/m-f407becb94db430e830123b6a05e9424/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.9.0
+model_id: m-f407becb94db430e830123b6a05e9424
+model_size_bytes: 724415
+model_uuid: m-f407becb94db430e830123b6a05e9424
+prompts: null
+run_id: f004ee1faa734bbe9bfe8bd044d35765
+utc_time_created: '2026-02-02 02:06:48.289852'
