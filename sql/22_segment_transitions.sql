@@ -5,7 +5,10 @@ SELECT
   customer_id,
   feature_date,
   risk_band,
-  LAG(risk_band) OVER (PARTITION BY customer_id ORDER BY feature_date) AS prev_risk_band,
+  COALESCE(
+    LAG(risk_band) OVER (PARTITION BY customer_id ORDER BY feature_date),
+    risk_band
+  ) AS prev_risk_band,
   CASE
     WHEN LAG(risk_band) OVER (PARTITION BY customer_id ORDER BY feature_date) IS NULL THEN false
     WHEN risk_band <> LAG(risk_band) OVER (PARTITION BY customer_id ORDER BY feature_date) THEN true

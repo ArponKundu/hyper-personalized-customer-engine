@@ -1,0 +1,48 @@
+# -----------------------------
+# Ignore Data Folders
+# -----------------------------
+data/
+datasets/
+raw_data/
+
+# Ignore Data Files
+*.csv
+*.zip
+*.bak
+
+# -----------------------------
+# Power BI
+# -----------------------------
+
+# Power BI temporary & cache files
+*.pbix.autosave
+*.pbix.tmp
+*.pbix.lock
+*.pbit.autosave
+
+# Power BI Desktop cache
+*.dmp
+
+# Analysis Services workspace (local model cache)
+**/AnalysisServicesWorkspaces/
+
+# Power BI Performance logs
+PerformanceTraces/
+
+# Backup files
+Backup Files/
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Python (if using for project)
+# -----------------------------
+.venv/
+__pycache__/
+*.pyc
+.env
+mlruns/
