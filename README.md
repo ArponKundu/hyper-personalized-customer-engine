@@ -26,7 +26,6 @@ Intelligent customer analytics system for e-commerce featuring:
 
 \- ⚡ \*\*Decision Engine\*\*: Automated intervention recommendations
 
-\- 🔮 \*\*Simulation Studio\*\*: Campaign "what-if" analysis
 
 
 
@@ -36,22 +35,19 @@ Intelligent customer analytics system for e-commerce featuring:
 
 \- PostgreSQL with TimescaleDB
 
-\- Streamlit Dashboard, FastAPI
+\- Power BI Dashboard
 
-\- Facebook Prophet for forecasting
 
 
 \## Project Structure
 
 ├── data/              # Datasets
 
-├── src/               # Source code
 
 ├── notebooks/         # Jupyter notebooks
 
 ├── docs/              # Documentation
 
-├── tests/             # Test cases
 
 ├── requirements.txt   # Python dependencies
 

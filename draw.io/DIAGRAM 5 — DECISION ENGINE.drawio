@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram id="cwWWq5qWcZnLTrxstAlf" name="Page-1">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=default;fillColor=default;fontSize=26;fontStyle=1;align=center;" value="Churn Decisioning &amp;amp; Actioning Engine" vertex="1">
+          <mxGeometry height="40" width="1800" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="band1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f8f9fb;strokeColor=#d6d6d6;fontStyle=1;" value="Model Output" vertex="1">
+          <mxGeometry height="320" width="260" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#eef5ff;strokeColor=#c5d9f1;fontStyle=1;" value="Risk Segmentation" vertex="1">
+          <mxGeometry height="320" width="360" x="360" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#eefaf0;strokeColor=#cfe8d1;fontStyle=1;" value="Prioritization" vertex="1">
+          <mxGeometry height="320" width="320" x="740" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#fff7ef;strokeColor=#f1d4b5;fontStyle=1;" value="Decision &amp; Actions" vertex="1">
+          <mxGeometry height="360" width="810" x="1080" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#ffffff;strokeColor=#666666;fontStyle=1;" value="churn_prob&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;ML output (0 → 1 probability)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="190" x="115" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Risk Classification&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;Low (&lt;0.4) → safe&#xa;Medium (0.4–0.7) → watchlist&#xa;High (&gt;0.7) → at-risk&lt;/font&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="420" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="Priority Score&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;priority_score = band_weight * 10 + churn_prob&#xa;High=2, Medium=1, Low=0&#xa;used for ranking and top-N targeting&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="260" x="770" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="segment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="Customer Segment&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;segment_name&#xa;behavioral context&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="170" x="1130" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="Action Assignment Logic&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;rules based on risk + priority + segment&#xa;maps customer → treatment&lt;/font&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="1100" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="offer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="Retention Offer&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;discounts, incentives&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="1450" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="campaign" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="Engagement Campaign&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;emails, push, reminders&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="1450" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="noaction" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="No Action&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;low-risk customers&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="180" x="1450" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="lognote" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;fontColor=#4d4d4d;" value="logged in intervention_logs" vertex="1">
+          <mxGeometry height="40" width="180" x="1680" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="n1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#666666;" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#6c8ebf;" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="n3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#82b366;" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3b" edge="1" parent="1" source="segment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#9673a6;" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#b85450;" target="offer">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1260" y="290" />
+              <mxPoint x="1540" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#9673a6;" target="campaign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#666666;" target="noaction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="campaign" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#d79b00;" target="lognote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="28" width="28" x="190" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontStyle=1;" value="2" vertex="1">
+          <mxGeometry height="28" width="28" x="540" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontStyle=1;" value="3" vertex="1">
+          <mxGeometry height="28" width="28" x="890" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontStyle=1;" value="4" vertex="1">
+          <mxGeometry height="28" width="28" x="1240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=light-dark(#D6D6D6,#FFFFFF);fontSize=11;fontColor=#666666;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Decision flow: churn probability → risk segmentation → priority scoring → rule-based action assignment using segment context&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="1800" x="80" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

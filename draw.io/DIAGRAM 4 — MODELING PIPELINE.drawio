@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram id="7xTJRpSMy9JIXcBb-zt3" name="Page-1">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=default;fillColor=default;fontSize=26;fontStyle=1;align=center;" value="Churn Model Training &amp;amp; Validation Pipeline" vertex="1">
+          <mxGeometry height="40" width="2100" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="band1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f8f9fb;strokeColor=#d6d6d6;fontStyle=1;" value="Feature Input" vertex="1">
+          <mxGeometry height="300" width="260" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#eef5ff;strokeColor=#c5d9f1;fontStyle=1;" value="Data Splitting Strategy" vertex="1">
+          <mxGeometry height="300" width="320" x="360" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#eefaf0;strokeColor=#cfe8d1;fontStyle=1;" value="Model Training &amp; Selection" vertex="1">
+          <mxGeometry height="300" width="460" x="700" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#fff7ef;strokeColor=#f1d4b5;fontStyle=1;" value="Evaluation Metrics" vertex="1">
+          <mxGeometry height="330" width="340" x="1180" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="band5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f5f3fb;strokeColor=#ddd3f2;fontStyle=1;" value="Production Output" vertex="1">
+          <mxGeometry height="330" width="640" x="1540" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#ffffff;strokeColor=#666666;fontStyle=1;" value="Feature Dataset&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;customer_features_daily&#xa;+ churn labels&#xa;multi-snapshot records&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="200" x="110" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Train/Test Split (Time-Based)&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;train: past data&#xa;test: future holdout&#xa;prevents data leakage&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="410" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="Model Training&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;Logistic Regression&#xa;Random Forest&#xa;XGBoost&#xa;LightGBM&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="250" x="750" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Model Evaluation&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;ROC-AUC&#xa;PR-AUC&#xa;Recall@Top-K&#xa;Model comparison&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="1220" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="mlflow" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;strokeWidth=2;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" value="Experiment Tracking&#xa;MLflow" vertex="1">
+          <mxGeometry height="60" width="140" x="1358" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="Final Model (LightGBM)&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;best performing model&#xa;selected for deployment&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="1550" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="shap" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;strokeWidth=2;fillColor=#ffffff;strokeColor=#9673a6;fontSize=11;fontStyle=1;" value="Model Interpretation&#xa;SHAP" vertex="1">
+          <mxGeometry height="60" width="140" x="1595" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="Predictions (churn_prob)&#xa;&lt;font style=&quot;font-size:11px;&quot;&gt;probability score per customer&#xa;used for downstream decisioning&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="1930" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="n1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#666666;" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#6c8ebf;" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="n3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#82b366;" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#d79b00;" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#9673a6;" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#6c8ebf;" target="n3" value="model tuning loop">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="420" />
+              <mxPoint x="880" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_mlflow" edge="1" parent="1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#6c8ebf;" target="mlflow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_shap" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#9673a6;" target="shap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#666666;strokeColor=#666666;fontColor=#ffffff;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="28" width="28" x="180" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#6c8ebf;strokeColor=#6c8ebf;fontColor=#ffffff;fontStyle=1;" value="2" vertex="1">
+          <mxGeometry height="28" width="28" x="520" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#82b366;strokeColor=#82b366;fontColor=#ffffff;fontStyle=1;" value="3" vertex="1">
+          <mxGeometry height="28" width="28" x="860" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d79b00;strokeColor=#d79b00;fontColor=#ffffff;fontStyle=1;" value="4" vertex="1">
+          <mxGeometry height="28" width="28" x="1330" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#9673a6;strokeColor=#9673a6;fontColor=#ffffff;fontStyle=1;" value="5" vertex="1">
+          <mxGeometry height="28" width="28" x="1690" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#b85450;strokeColor=#b85450;fontColor=#ffffff;fontStyle=1;" value="6" vertex="1">
+          <mxGeometry height="28" width="28" x="1960" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffffff;strokeColor=light-dark(#D6D6D6,#FFFFFF);fontSize=11;fontColor=#666666;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Pipeline: features + churn labels → time-based split → multi-model training → evaluation → best model selection (LightGBM) → churn probability scoring&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="2100" x="80" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -5,7 +5,6 @@ SELECT
   f.customer_id,
   f.feature_date AS snapshot_date,
 
-  -- churn_30d: no purchase in (snapshot_date+1 .. snapshot_date+30)
   CASE WHEN EXISTS (
     SELECT 1
     FROM hpce.customer_purchases p

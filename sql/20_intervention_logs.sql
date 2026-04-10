@@ -4,7 +4,7 @@ CREATE TABLE hpce.intervention_logs (
   log_id               bigserial PRIMARY KEY,
   customer_id          text NOT NULL,
   intervention_date    date NOT NULL,
-  feature_date         date NOT NULL,   -- same as feature_date typically
+  feature_date         date NOT NULL,
   action               text NOT NULL,
   churn_prob           double precision NOT NULL,
   risk_band            text NOT NULL,

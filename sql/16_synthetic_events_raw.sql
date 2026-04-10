@@ -6,7 +6,7 @@ CREATE TABLE hpce.synthetic_events_raw (
   event_id      bigserial PRIMARY KEY,
   customer_id   text NOT NULL,
   event_time    timestamp NOT NULL,
-  event_type    text NOT NULL,       -- view/search/add_to_cart/etc
+  event_type    text NOT NULL,
   session_id    text NULL,
   source        text NOT NULL DEFAULT 'synthetic',
   meta          jsonb NULL

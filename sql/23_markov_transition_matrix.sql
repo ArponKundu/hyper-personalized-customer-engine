@@ -1,17 +1,20 @@
 DROP TABLE IF EXISTS hpce.markov_transition_matrix;
 
 CREATE TABLE hpce.markov_transition_matrix AS
-WITH trans AS (
-  SELECT prev_risk_band, risk_band
+WITH base AS (
+  SELECT prev_risk_band, risk_band, COUNT(*)::int AS n
   FROM hpce.segment_transitions
-  WHERE prev_risk_band IS NOT NULL
+  GROUP BY 1,2
+),
+den AS (
+  SELECT prev_risk_band, SUM(n) AS total_n
+  FROM base
+  GROUP BY 1
 )
 SELECT
-  prev_risk_band,
-  risk_band,
-  COUNT(*) AS n,
-  COUNT(*)::float / SUM(COUNT(*)) OVER (PARTITION BY prev_risk_band) AS p
-FROM trans
-GROUP BY 1,2;
-
-CREATE INDEX IF NOT EXISTS idx_mtm_prev ON hpce.markov_transition_matrix(prev_risk_band);
+  b.prev_risk_band,
+  b.risk_band,
+  b.n,
+  (b.n::double precision / d.total_n) AS p
+FROM base b
+JOIN den d USING (prev_risk_band);

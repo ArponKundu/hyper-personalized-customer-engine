@@ -15,10 +15,7 @@ WITH base AS (
 roll AS (
   SELECT
     b.*,
-
-    -- =====================
     -- 30-day windows
-    -- =====================
     SUM(daily_orders) OVER (
       PARTITION BY customer_uid ORDER BY feature_date
       ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
@@ -36,9 +33,7 @@ roll AS (
       ROWS BETWEEN 59 PRECEDING AND 30 PRECEDING
     ) AS m_30_prev30,
 
-    -- =====================
     -- 60-day windows
-    -- =====================
     SUM(daily_orders) OVER (
       PARTITION BY customer_uid ORDER BY feature_date
       ROWS BETWEEN 59 PRECEDING AND CURRENT ROW
@@ -56,9 +51,7 @@ roll AS (
       ROWS BETWEEN 119 PRECEDING AND 60 PRECEDING
     ) AS m_60_prev60,
 
-    -- =====================
     -- 90-day windows
-    -- =====================
     SUM(daily_orders) OVER (
       PARTITION BY customer_uid ORDER BY feature_date
       ROWS BETWEEN 89 PRECEDING AND CURRENT ROW
@@ -76,7 +69,6 @@ roll AS (
       ROWS BETWEEN 179 PRECEDING AND 90 PRECEDING
     ) AS m_90_prev90,
 
-    -- last purchase date for recency
     MAX(CASE WHEN daily_orders > 0 THEN feature_date END) OVER
       (PARTITION BY customer_uid ORDER BY feature_date) AS last_purchase_date
 

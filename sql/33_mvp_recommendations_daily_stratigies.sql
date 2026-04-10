@@ -1,7 +1,7 @@
 INSERT INTO hpce.mvp_recommendations_daily
 (customer_id, feature_date, strategy, product_id, product_category_name, score, reason)
 SELECT
-  DISTINCT d.customer_id AS customer_id,   -- customer_unique_id
+  DISTINCT d.customer_id AS customer_id,
   d.feature_date,
   'RETENTION_LAST_CATEGORY' AS strategy,
   tp.product_id,

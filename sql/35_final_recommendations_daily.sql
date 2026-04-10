@@ -32,8 +32,6 @@ WITH base AS (
   FROM hpce.mvp_recommendations_daily r
 ),
 dedup AS (
-  -- If same product appears in multiple strategies for same customer/date,
-  -- keep the best (lowest priority number, then highest score).
   SELECT *
   FROM (
     SELECT

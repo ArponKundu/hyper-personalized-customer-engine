@@ -12,7 +12,7 @@ WITH seg AS (
 treated AS (
   SELECT DISTINCT customer_id, feature_date
   FROM hpce.intervention_logs
-  WHERE action <> 'No Action'   -- match your treated definition
+  WHERE action <> 'No Action'
 )
 SELECT
   seg.segment_name AS prev_segment,
